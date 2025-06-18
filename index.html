@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beleza & Cuidado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo.png" alt="Logo Beleza & Cuidado" class="logo" />
+  </header>
+
+  <section class="banner">
+    <img src="imagens/banner.png" alt="Banner promocional" />
+  </section>
+
+  <section class="produtos">
+    <div class="produto">
+      <img src="imagens/rimel.png" alt="Rímel" />
+      <h3>Rímel Volume Extra</h3>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/paleta.png" alt="Paleta de Maquiagem" />
+      <h3>Paleta de Sombras</h3>
+    </div>
+  </section>
+
+  <!-- Botão de ajuda -->
+  <button id="botao-ajuda">Precisa de ajuda?</button>
+
+  <!-- Chat de acolhimento -->
+  <section class="chat" id="chat">
+    <button id="fechar-chat" aria-label="Fechar chat">&times;</button>
+    
+    <div class="area-mensagens" id="area-mensagens"></div>
+
+    <form id="form-chat">
+      <input
+        type="text"
+        id="input-mensagem"
+        placeholder="Escreva sua mensagem..."
+        autocomplete="off"
+        required
+        aria-label="Mensagem"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Sua navegação é segura e protegida. Garantimos a segurança dos seus dados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
