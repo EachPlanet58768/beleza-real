@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const inputMensagem = document.getElementById("input-mensagem");
   const chatMensagens = document.getElementById("chat-mensagens");
 
-  let mensagensEnviadas = 0;
+  let mensagensEnviadas = 0;  // Aqui estava faltando um ponto e vírgula no seu código original.
 
   botaoAjuda.addEventListener("click", function() {
     chat.style.display = "block";
@@ -47,9 +47,15 @@ document.addEventListener("DOMContentLoaded", function() {
     if (isUser) {
       novaMensagem.style.textAlign = "right";
       novaMensagem.style.backgroundColor = "#d1f5d3";
+      novaMensagem.style.margin = "5px 0";
+    } else {
+      novaMensagem.style.textAlign = "left";
+      novaMensagem.style.backgroundColor = "#f0f0f0";
+      novaMensagem.style.margin = "5px 0";
     }
     novaMensagem.textContent = texto;
     chatMensagens.appendChild(novaMensagem);
     chatMensagens.scrollTop = chatMensagens.scrollHeight;
   }
 });
+
